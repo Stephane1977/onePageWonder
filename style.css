@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin:0;/*Marges extérieur*/
+}
+/**
+* barre de navigation
+*/
+.container{
+    width: 60%;
+    margin: auto; /* aplques ds marges extérieur sur l'espace disponible*/
+}
+nav{
+    background-color: black;/*couleur de fond*/
+    text-transform: uppercase; /*Met le texte en majuscule*/
+    }
+/*toujours preciser la balise "a" pour effectuer des changements */
+/* L'espace represente"à l'intereurde..."*/
+nav .container{
+    display: flex;
+    justify-content: space-between; /* separe les élémnents en utilisant l'espace disponible*/
+    align-items: center; /* centre verticalement*/
+}
+nav a {
+    color: white;
+    text-decoration: none; /* Enlève le soulignement du lien */
+    font-weight: bold; /* Mettre le texte en gras*/
+    }
+
+nav ul {
+    display: flex; /* aligne les élements sur une ligne */
+    list-style: none; /*Retir les élemnts décoratifs commes les points */
+    gap: 20px; /* L'escart entre les élémnts*/
+}
+
+header {
+    background: linear-gradient(to right,#e71969,#f56306);
+    color: white;
+    text-align: center;/*Alignement horizontal du text*/
+    padding-top: 215px;
+    padding-bottom: 215px;
+    padding: 215 px 0 215px 0; /*Dans l'ordre: haut, droite, bas,gauche*/
+    padding: 215px 0;/*Dans l'odre: haut/bas et droite/gauche*/
+    padding : 215 px;/* /*les 4 coté prennent une valeur*/
+    }
+
+header h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+header h2 {
+    font-size: 4rem;
+    margin: 10px 0 80px 0; /* 10px haut, 0 droite, 80 px bas, 0 gauche*/
+}
+.btn{
+    color : white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #991e5f;
+    padding: 30px 45px; /* 30 px haut et bas, 45 droite et gauche */
+    border-radius: 100px;/*arrondis les bords*/
+    letter-spacing: 0.2rem; /* Espacement entre les lettres*/
+    transition: all 500ms;
+}
+/**
+* : hover s'enclenche dès que la souris survole lélément
+* ATTENTION ! Pas d'espace avant et aprés les ":"
+*/
+
+.btn:hover {
+    background-color: #ff2400;
+    transition: all 500ms;
+
+}
+
